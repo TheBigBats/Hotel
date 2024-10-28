@@ -10,7 +10,7 @@ try {
 
 // Fonction pour insérer une réservation
 if (isset($_POST['ajouter'])) {
-    $stmt = $conn->prepare("INSERT INTO RESERVATION (ID_RESERVATION, ID_CLIENT, ID_CHAMBRE, DATE_DEBUT, DATE_FIN) VALUES (:id_reservation, :id_client, :id_chambre, :date_debut, :date_fin)");
+    $stmt = $conn->prepare("INSERT INTO RESERVATION (ID_RESERVATION, ID_CLIENT, ID_CHAMBRE, DATE_DEBUT, DATE_FIN) VALUES (:id_reservation, :id_client, :id_chambre, TO_DATE(:date_debut, 'YYYY-MM-DD'), TO_DATE(:date_fin, 'YYYY-MM-DD'))");
     $stmt->execute([
         ':id_reservation' => $_POST['id_reservation'],
         ':id_client' => $_POST['id_client'],
@@ -23,7 +23,7 @@ if (isset($_POST['ajouter'])) {
 
 // Fonction pour mettre à jour une réservation
 if (isset($_POST['modifier'])) {
-    $stmt = $conn->prepare("UPDATE RESERVATION SET ID_CLIENT = :id_client, ID_CHAMBRE = :id_chambre, DATE_DEBUT = :date_debut, DATE_FIN = :date_fin WHERE ID_RESERVATION = :id_reservation");
+    $stmt = $conn->prepare("UPDATE RESERVATION SET ID_CLIENT = :id_client, ID_CHAMBRE = :id_chambre, DATE_DEBUT = TO_DATE(:date_debut, 'YYYY-MM-DD'), DATE_FIN = TO_DATE(:date_fin, 'YYYY-MM-DD') WHERE ID_RESERVATION = :id_reservation");
     $stmt->execute([
         ':id_reservation' => $_POST['id_reservation'],
         ':id_client' => $_POST['id_client'],
@@ -47,7 +47,7 @@ if (isset($_POST['supprimer'])) {
 <head>
     <meta charset="UTF-8">
     <title>Gestion des Réservations</title>
-    <link rel="stylesheet" href="stylegestionreservation.css"> <!-- Assurez-vous d'avoir votre feuille de style -->
+    <link rel="stylesheet" href="stylegestionreservation.css"> 
 </head>
 <body>
     <h1>Gestion des Réservations</h1>
