@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h3>Bienvenue!</h3>
             <p>Accédez à votre espace de gestion en toute simplicité.<br> 
             Connectez-vous pour gérer efficacement vos services hôteliers.</p>
-            <a href="Documentation.html">C'est partie</a>
+            <a href="Documentation.html">C'est parti</a>
         </div>
         <script>
         // Fonction pour masquer le message de bienvenue sur redimensionnement
