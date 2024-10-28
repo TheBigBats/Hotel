@@ -1,0 +1,191 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width : 100%;
+    background: linear-gradient(135deg, #4A90E2, #7B4397);
+    color: #fff;
+    position: relative;
+    background-image: url('hotel1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    
+    padding: 1rem;
+    text-align: left; /* Place le logo à gauche */
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    color: #ffffff;
+    max-width: 600px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin : 0 auto;
+    overflow-wrap: break-word;
+    
+}
+
+.welcome-message h3 {
+    font-size: 3em;
+    margin-bottom: .03rem;
+    text-align: left; /* Alignement à gauche pour h3 */
+    word-wrap: break-word;
+}
+
+.welcome-message p{
+    margin: 10px 0 40px;
+    word-wrap: break-word;
+
+}
+
+.welcome-message a {
+    color :#fff;
+    text-decoration: none;
+    border : 2px solid #fff;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: 0.5s;
+
+}
+
+.welcome-message a:hover{
+    background : #333;
+}
+
+
+
+.login-container {
+    background-color: #262628e3;
+    color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    right: 2rem; /* Place la box de connexion à droite */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #f4f5f7;
+}
+
+.login-container .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+
+}
+
+.login-container label {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    margin-top: 0.3rem;
+    font-size: 1em;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    
+}
+.login-container label {
+    color: #fff;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+.register-link p {
+    color: #fff;
+}
+
+.register-link a{
+    color: #fff;
+}
+
+.login-btn {
+    background : linear-gradient(90deg, #3a371c, #8a7c03);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 8px 10px rgba(98, 91, 2, 0.2);
+}
+
+.login-btn:hover {
+    background-color: #5189c1;
+}
+
+.error-message {
+    color: rgb(144, 40, 40);
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .welcome-message {
+        font-size: 1em; /* Réduction de la taille du texte */
+        margin-bottom: 20px; /* Écart entre le texte et la boîte de connexion */
+    }
+
+    .login-container {
+        width: 80%; /* Ajustement à 80% sur petits écrans */
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome-message {
+        font-size: 0.6em; /* Taille encore plus petite pour mobiles */
+    }
+
+    .login-container {
+        width: 90%; /* Ajustement à 90% sur mobiles */
+        padding: 1rem; /* Padding ajusté */
+    }
+}
