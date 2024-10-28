@@ -17,7 +17,7 @@ $chambres = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Liste des Chambres</title>
-    <link rel="stylesheet" href="style7.css">
+    <link rel="stylesheet" href="style5.css">
     <script>
         let selectedRowId = null;
 
