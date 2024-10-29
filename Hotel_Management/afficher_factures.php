@@ -56,7 +56,7 @@ $factures = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php foreach ($factures as $facture): ?>
                 <tr id="row-<?= htmlspecialchars($facture['ID_FACTURE']) ?>" onclick="selectRow(<?= htmlspecialchars($facture['ID_FACTURE']) ?>)">
                     <td><?= htmlspecialchars($facture['ID_FACTURE']) ?></td>
-                    <td><?= htmlspecialchars($facture['MONTANT_TOTAL_FACTURE']) ?></td>
+                    <td><?= htmlspecialchars($facture['MONTANT_TOTAL_FACTURE']) ?>€</td>
                     <td><?= htmlspecialchars($facture['DATE_FACTURE']) ?></td>
                     <td>
                         <a href="facture.php?id=<?= htmlspecialchars($facture['ID_FACTURE']) ?>">Modifier</a>
