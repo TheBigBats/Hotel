@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0;
+    flex-direction: column;
+    background: linear-gradient(to right, #293ddb, #7b18b8);
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    color: #fffefe;
+    margin-bottom: 20px; /* Ajoute de l'espacement sous le titre */
+}
+
+
+form {
+    display: flex; /* Utilisation de Flexbox pour le layout */
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les colonnes */
+}
+
+form .form-group {
+    
+    min-width: 300px; /* Largeur minimale pour chaque groupe */
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #080808;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espace entre les boutons */
+    margin-top: 20px; /* Espacement au-dessus des boutons */
+}
+
+button[type="submit"] {
+    background-color: #058e22;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 2px solid #353535;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 160px;  /* Largeur de 160 pixels */
+    height: 50px;
+}
+button[type="submit"]:hover {
+    background-color: #7a05bd;
+}
+
+.consult-button {
+    background-color: #058e22; /* Couleur du bouton */
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0; /* Espacement au-dessus et en dessous */
+    border:  2px solid #353535; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    font-size: 16px; /* Taille de police */
+    width: 200px; /* Largeur du bouton */
+}
+
+.consult-button:hover {
+    background-color: #7a05bd; /* Couleur au survol */
+}
