@@ -4,14 +4,8 @@ Ce projet a été réalisé dans le cadre du Master MBDS et a pour objectif de c
 Structure du Projet
 Le projet est organisé comme suit :
 
-├── Fichiers_SQL/
-│   ├── database_schema.sql        # Script pour créer la base de données
-│   ├── insert_data.sql            # Requêtes d'insertion des données initiales
-├── Hotel_Management/
-│   ├── site_web/                  # Code source du site web
-├──Maquettes_Hotel_Management.pdf  # Maquette de l'interface
-├── specification_analyse_conception_AFIFI_GROS_IJJA.pdf  # Spécification fonctionnelle
-└── README.md                      # Ce fichier
+![image](https://github.com/user-attachments/assets/2bce28a9-fc87-4331-85ec-81f3320bbf34)
+
 
 Installation
 
