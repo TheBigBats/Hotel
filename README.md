@@ -10,8 +10,6 @@ Le projet est organisé comme suit :
 Installation
 
 Cloner le dépôt :
-bash
-Copier le code
 git clone https://github.com/TheBigBats/Hotel.git
 
 Configurer la base de données :
@@ -20,7 +18,7 @@ Exécuter les scripts SQL situés dans le dossier Fichiers_SQL.
 Déployer le site web :
 Déployer les fichiers du dossier Hotel_Management sur votre serveur.
 
-Fonctionnalités
+Fonctionnalités :
 Gestion des chambres (réservation, maintenance, disponibilité)
 Gestion des clients
 Gestion des réservations
