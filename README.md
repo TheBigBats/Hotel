@@ -16,10 +16,13 @@ Configurer la base de données :
 Exécuter les scripts SQL situés dans le dossier Fichiers_SQL.
 
 Déployer le site web :
+Lancer Wamp(configuration de Oci8)
 Déployer les fichiers du dossier Hotel_Management sur votre serveur.
 
 Fonctionnalités :
-Gestion des chambres (réservation, maintenance, disponibilité)
+Gestion des chambres (en nettoyage,besoin de maintenance, disponibilité)
 Gestion des clients
 Gestion des réservations
+Gestion des factures 
+Gestion des paiements
 
